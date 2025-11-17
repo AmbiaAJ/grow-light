@@ -26,6 +26,29 @@
                 transform: scale(1.05);
             }
         }
+@keyframes rgbGlow {
+  0% {
+    color: rgba(255, 0, 0, 0.9);
+    text-shadow: 0 0 1px rgba(255, 0, 0, 0.6);
+  }
+  33% {
+    color: rgba(0, 255, 0, 0.9);
+    text-shadow: 0 0 1px rgba(0, 255, 0, 0.6);
+  }
+  66% {
+    color: rgba(0, 0, 255, 0.9);
+    text-shadow: 0 0 1px rgba(0, 0, 255, 0.6);
+  }
+  100% {
+    color: rgba(255, 0, 0, 0.9);
+    text-shadow: 0 0 1px rgba(255, 0, 0, 0.6);
+  }
+}
+
+.rgb-glow-text {
+  animation: rgbGlow 2.5s infinite linear;
+  font-weight: 700;
+}
     </style>
 </head>
 
@@ -75,9 +98,11 @@
         });
     </script>
     <!-- Hero -->
-    <section class="text-center py-20 bg-gradient-to-b from-white to-blue-50">
-        <h1 class="text-4xl md:text-6xl font-semibold mb-4 sr-hero-title">Lampu Tumbler <span
-                class="text-blue-600">Minimalis</span> & Unik</h1>
+    <section class="text-center py-8 bg-gradient-to-b from-white to-blue-50">
+        <h1 class="text-4xl md:text-6xl font-semibold mb-4 sr-hero-title 
+    rgb-glow-text">
+    Lampu Tumbler Kreatif & Unik
+</h1>
         <p class="mt-4 text-gray-600 max-w-2xl mx-auto sr-hero-desc">Lampu Tumbler merupakan inovasi pencahayaan
             modern yang dirancang untuk menghadirkan suasana hangat dan nyaman di berbagai ruangan. Produk ini
             mengombinasikan desain elegan dengan fungsionalitas tinggi, sehingga tidak hanya berperan sebagai sumber
@@ -100,8 +125,8 @@
                     alt="Tumbler LED Mini"
                     class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="font-semibold">Tumbler LED Mini</h3>
-                <p class="text-sm text-gray-600">Indoor · USB</p>
-                <p class="text-sm text-gray-600">Rp 3000 / meter</p>
+                <p class="text-sm text-gray-600">Indoor  -  Baterai</p>
+                <p class="text-sm text-gray-600">Rp 3.000 / 2 meter</p>
             </div>
             <div
                 class="border rounded-2xl p-6 shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
@@ -109,17 +134,17 @@
                     alt="Tumbler Strip 10m"
                     class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="font-semibold">Tumbler Full Color</h3>
-                <p class="text-sm text-gray-600">Indoor/Outdoor</p>
-                <p class="text-sm text-gray-600">Rp 5000 / meter</p>
+                <p class="text-sm text-gray-600">Listrik AC 220V</p>
+                <p class="text-sm text-gray-600">Rp 16.000 / 10 meter</p>
             </div>
             <div
                 class="border rounded-2xl p-6 shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
-                <img src="https://th.bing.com/th/id/OIP.kxw7H141T37coNbl59-3EwHaHa?w=207&h=207&c=7&r=0&o=5&pid=1.7"
+                <img src="https://cdn.shopify.com/s/files/1/0071/7547/1162/products/waterproof-led-strip-lights-2_1024x1024.jpg?v=1571720922"
                     alt="Neon Flex"
                     class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="font-semibold">Tumbler Custom</h3>
-                <p class="text-sm text-gray-600">Custom warna led</p>
-                <p class="text-sm text-gray-600">Rp 6000 / meter</p>
+                <h3 class="font-semibold">LED Strip</h3>
+                <p class="text-sm text-gray-600">Indoor  -  USB</p>
+                <p class="text-sm text-gray-600">Rp 35.000 / 2 meter</p>
             </div>
         </div>
     </section>
@@ -143,84 +168,38 @@
             </div>
             <div
                 class="p-6 border rounded-2xl shadow bg-white hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
-                <h3 class="font-semibold">Customizable LED</h3>
-                <p class="text-sm text-gray-600">Selain warna LED yang bisa diubah sesuai selera, lampu ini juga
-                    mendukung kustomisasi teks. Kamu bisa menambahkan nama, kata motivasi, atau pesan khusus lainnya,
-                    sehingga lampu tumbler ini menjadi hadiah personal yang unik dan berkesan.</p>
+                <h3 class="font-semibold">LED Strip</h3>
+                <p class="text-sm text-gray-600">Rangkaian lampu LED yang tersusun memanjang pada sebuah pita fleksibel. Lampu ini mudah dipasang, dapat dipotong sesuai kebutuhan, dan menghasilkan cahaya yang terang serta hemat energi. LED strip sering digunakan untuk dekorasi ruangan, meja, rak, atau pencahayaan aksen agar tampilan lebih modern dan menarik.</p>
             </div>
         </div>
     </section>
-    <!-- Spesifikasi -->
-    <section id="specs" class="py-20 max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-semibold mb-6">Spesifikasi</h2>
-        <ul class="space-y-3">
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Daya <span>5V USB / 12V</span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Warna <span>Putih · Hitam · Biru
-                </span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Mode <span>Static · Twinkle ·
-                    Wave</span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">IP Rating <span>IP20 / IP65</span>
-            </li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Berat <span>250g / 500g</span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Tegangan <span>DC 5V / 12V</span>
-            </li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Konsumsi Daya <span>5W /
-                    12W</span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Material <span>Silicone + LED
-                    Premium</span></li>
-            <li class="flex justify-between border rounded-xl px-4 py-2 sr-spec">Garansi <span>1 Tahun</span></li>
-        </ul>
-    </section>
-    <!-- Testimoni -->
-    <section id="testimonials" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-semibold mb-10 text-center sr-testimonials-title">Apa Kata Mereka</h2>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Lampu Grow Light bikin kamar saya jadi estetik banget.”</p>
-                    <span class="block mt-4 font-semibold">— MASKUR, Jakarta</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Kualitas premium, nyalanya lembut, cocok untuk kafe saya.”</p>
-                    <span class="block mt-4 font-semibold">— BAYU PUTRA S, Surabaya</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Harga terjangkau, desain simple, puas banget.”</p>
-                    <span class="block mt-4 font-semibold">— GALANG, Bandung</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Lampunya fleksibel dan mudah dipasang, sangat praktis.”</p>
-                    <span class="block mt-4 font-semibold">— INTAN, Yogyakarta</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Desain minimalisnya bikin ruang tamu terlihat modern.”</p>
-                    <span class="block mt-4 font-semibold">— PRABU AGASTYA P, Semarang</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Cahaya lembutnya bikin nyaman saat membaca buku malam hari.”</p>
-                    <span class="block mt-4 font-semibold">— REZA, Malang</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Lampu dekoratif ini membuat kafe saya lebih Instagramable.”</p>
-                    <span class="block mt-4 font-semibold">— RISKI, Bali</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Materialnya bagus, awet, dan tidak cepat panas.”</p>
-                    <span class="block mt-4 font-semibold">— FAKHRI, Medan</span>
-                </div>
-                <div
-                    class="p-6 border rounded-2xl bg-white shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-transform duration-300 sr-testimonials">
-                    <p class="italic">“Sangat cocok untuk dekorasi kamar anak, warna-warni menarik.”</p>
-                    <span class="block mt-4 font-semibold">— BHIMANDHAJENAR, Makassar</span>
-                </div>
+    <!-- Produk -->
+    <section id="products" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-10">Produk Tambahan (Kerajinan Kawat Bulu)</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div
+                class="border rounded-2xl p-6 shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
+                <img src="data:image/webp;base64,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"
+                    alt="Tumbler LED Mini"
+                    class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="font-semibold">Produk 1</h3>
+                <p class="text-sm text-gray-600">Rp 40.000</p>
+            </div>
+            <div
+                class="border rounded-2xl p-6 shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
+                <img src="https://th.bing.com/th/id/OIP.lMRJ2Y4sPbEb48_wFvB3OQHaHa?w=200&h=199&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Tumbler Strip 10m"
+                    class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="font-semibold">Produk 2</h3>
+                <p class="text-sm text-gray-600">Rp 40.000</p>
+            </div>
+            <div
+                class="border rounded-2xl p-6 shadow hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
+                <img src="https://th.bing.com/th/id/OIP.kxw7H141T37coNbl59-3EwHaHa?w=207&h=207&c=7&r=0&o=5&pid=1.7"
+                    alt="Neon Flex"
+                    class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="font-semibold">Produk 3</h3>
+                <p class="text-sm text-gray-600">Rp 40.000</p>
             </div>
         </div>
     </section>
@@ -239,27 +218,24 @@
                 <div
                     class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition-transform duration-300 hover:scale-105 w-52">
                     <h3 class="font-semibold text-lg mb-1">Galang Arya S</h3>
-                    <p class="text-sm text-gray-600 mb-1">Teknisi LED</p>
+                    <p class="text-sm text-gray-600 mb-1">Poduksi</p>
                     <p class="text-sm text-gray-600 mb-1">Keahlian: Elektronik, Rangkaian LED</p>
-                    <p class="text-sm text-gray-600 mb-1">Kontak: -</p>
                     <p class="text-sm text-gray-600">Telepon: +62 857-4945-2044 (WhatsApp)</p>
                 </div>
                 <!-- Pekerja 2 -->
                 <div
                     class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition-transform duration-300 hover:scale-105 w-52">
                     <h3 class="font-semibold text-lg mb-1">Maskur</h3>
-                    <p class="text-sm text-gray-600 mb-1">Customer Support</p>
-                    <p class="text-sm text-gray-600 mb-1">Keahlian: Komunikasi, Layanan Pelanggan</p>
-                    <p class="text-sm text-gray-600 mb-1">Kontak: -</p>
+                    <p class="text-sm text-gray-600 mb-1">Ketua</p>
+                    <p class="text-sm text-gray-600 mb-1">Keahlian: Komunikasi, Manajer Tim</p>
                     <p class="text-sm text-gray-600">Telepon: +62 877-9049-0320 (WhatsApp)</p>
                 </div>
                 <!-- Pekerja 3 -->
                 <div
                     class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition-transform duration-300 hover:scale-105 w-52">
                     <h3 class="font-semibold text-lg mb-1">Intan Puspitasari</h3>
-                    <p class="text-sm text-gray-600 mb-1">Marketing & Sales</p>
+                    <p class="text-sm text-gray-600 mb-1">Pemasaran</p>
                     <p class="text-sm text-gray-600 mb-1">Keahlian: Strategi Pemasaran, Media Sosial</p>
-                    <p class="text-sm text-gray-600 mb-1">Kontak: -</p>
                     <p class="text-sm text-gray-600">Telepon: +62 882-3038-4910 (WhatsApp)</p>
                 </div>
                 <!-- Pekerja 4 -->
@@ -268,16 +244,14 @@
                     <h3 class="font-semibold text-lg mb-1">Bayu Putra S</h3>
                     <p class="text-sm text-gray-600 mb-1">Kepala Desain</p>
                     <p class="text-sm text-gray-600 mb-1">Keahlian: UI/UX, Adobe Illustrator, Photoshop</p>
-                    <p class="text-sm text-gray-600 mb-1">Kontak: -</p>
                     <p class="text-sm text-gray-600">Telepon: +62 882-3117-9000 (WhatsApp)</p>
                 </div>
                 <!-- Pekerja 5 -->
                 <div
                     class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition-transform duration-300 hover:scale-105 w-52">
                     <h3 class="font-semibold text-lg mb-1">Ambia Alexander J</h3>
-                    <p class="text-sm text-gray-600 mb-1">Manajer Produksi</p>
-                    <p class="text-sm text-gray-600 mb-1">Keahlian: Kontrol Kualitas, Manajemen Tim</p>
-                    <p class="text-sm text-gray-600 mb-1">Kontak: -</p>
+                    <p class="text-sm text-gray-600 mb-1">Keuangan</p>
+                    <p class="text-sm text-gray-600 mb-1">Keahlian: Kontrol Keuangan, Manajemen Keuangan</p>
                     <p class="text-sm text-gray-600">Telepon: +62 858-0827-1399 (Whatsapp)</p>
                 </div>
             </div>
